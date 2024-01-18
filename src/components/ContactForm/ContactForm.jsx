@@ -18,7 +18,7 @@ const hangleChange = (event) => {
 
 const handleSabmit = event => {
   event.preventDefault();
-    onSubmit(name, number);
+    onSubmit({name, number});
     reset();
   };
 

@@ -48,7 +48,7 @@ const addContact = ({ name, number }) => {
     }
   }
 
-const Delite = id => {
+function OnDelite(id) {
   setContacts(contacts.filter(contact => contact.id !== id));
   toast.success('The contact has been deleted', {
     autoClose: 2000,
@@ -99,7 +99,7 @@ function filteredContacts() {
      
 
 <ContactList contacts={filteredContacts()}
- Delite={Delite}/>
+ OnDelite={OnDelite}/>
 
       <ToastContainer/>
       </Container>
